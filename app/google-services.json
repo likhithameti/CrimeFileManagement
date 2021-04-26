@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "590487501451",
+    "project_id": "crimefilemanagement-91813",
+    "storage_bucket": "crimefilemanagement-91813.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:590487501451:android:f621445f2da74cf8d2328e",
+        "android_client_info": {
+          "package_name": "com.example.crimemanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "590487501451-o4jbmog3689ku19f3n0c5mum5m6qtjvq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqhe-7w9-7akP0l1ar427GSO_bXyzMOqE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "590487501451-o4jbmog3689ku19f3n0c5mum5m6qtjvq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
