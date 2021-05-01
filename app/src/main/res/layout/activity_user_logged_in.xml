@@ -64,11 +64,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Register New Complaint"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:textStyle="bold"
                 android:textColor="#162014"
                 android:layout_alignParentRight="true"
-                android:padding="20dp" />
+                android:padding="10dp" />
 
         </RelativeLayout>
 
@@ -88,11 +88,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Check Complaint Status"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:textStyle="bold"
                 android:textColor="#162014"
                 android:layout_alignParentRight="true"
-                android:padding="25dp" />
+                android:padding="10dp" />
 
         </RelativeLayout>
 
@@ -100,6 +100,7 @@
             android:layout_width="match_parent"
             android:background="#9979CFC5"
             android:layout_marginTop="20dp"
+            android:onClick="viewprofile"
             android:layout_marginBottom="20dp"
             android:layout_height="110dp">
 
@@ -112,12 +113,37 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Update My Profile"
-                android:textSize="20sp"
+                android:text="View My Profile"
+                android:textSize="16sp"
                 android:textStyle="bold"
                 android:textColor="#162014"
                 android:layout_alignParentRight="true"
-                android:padding="25dp" />
+                android:padding="10dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="#99719ABA"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:onClick="updateprofile"
+            android:layout_height="110dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_baseline_update_24"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update Profile"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#162014"
+                android:layout_alignParentRight="true"
+                android:padding="10dp" />
 
         </RelativeLayout>
 
@@ -138,11 +164,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Check Latest News"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:textStyle="bold"
                 android:textColor="#162014"
                 android:layout_alignParentRight="true"
-                android:padding="25dp" />
+                android:padding="10dp" />
 
         </RelativeLayout>
 
@@ -163,11 +189,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Most Wanted Persons"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:textStyle="bold"
                 android:textColor="#162014"
                 android:layout_alignParentRight="true"
-                android:padding="25dp" />
+                android:padding="10dp" />
 
         </RelativeLayout>
 

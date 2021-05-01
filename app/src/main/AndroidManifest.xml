@@ -2,14 +2,27 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.crimemanagement">
 
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/policelaunch"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CrimeManagement">
-        <activity android:name=".UserLoggedIn"></activity>
+        <activity android:name=".MostWantedList"></activity>
+        <activity android:name=".AdminAddMostWanted" />
+        <activity android:name=".AdminDashboard" /> <!-- <activity -->
+        <!-- android:name="ar.ui.login.AdminDashbod" -->
+        <!-- android:label="@string/title_activity_admin_dashboard" /> -->
+        <activity android:name=".AdminLoginPage" />
+        <activity android:name=".UpdateProfile" />
+        <activity android:name=".ViewProfile" />
+        <activity android:name=".UserLoggedIn" />
         <activity android:name=".SignInPage" />
         <activity android:name=".signupPage" />
         <activity android:name=".MainActivity">

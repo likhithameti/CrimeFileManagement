@@ -14,5 +14,11 @@
     <color name="colortextSecondary">#757575</color>
     <color name="colorDivider">#BDBDBD</color>
     <color name="colorWhite">#FFFFFF</color>
+    <color name="profileColorPrimary">#3F51B5</color>
+    <color name="profileColorPriamryDark">#292B3D</color>
+    <color name="profilegraylight">#FAFAFA</color>
+    <color name="profilestartblue">#09C6DF</color>
+    <color name="profileendblue">#0BCCE6</color>
+    <color name="profileColorAccent">#FF4081</color>
 
 </resources>
