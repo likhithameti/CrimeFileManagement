@@ -7,19 +7,23 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import com.google.firebase.firestore.auth.User;
+
+import static com.example.crimemanagement.SignInPage.globalusername;
+
 public class UserLoggedIn extends AppCompatActivity {
 
-    String username;
+    public static String username;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Intent profile = getIntent();
-        username = profile.getStringExtra("profilename");
+        username = globalusername;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_logged_in);
     }
 
     public void newcomplaint(View view) {
-        Toast.makeText(this, "New Complaint Clicked", Toast.LENGTH_LONG).show();
+        Intent newcomp = new Intent(UserLoggedIn.this,ChooseComplaintArea.class);
+        startActivity(newcomp);
     }
 
     public void signoutbutton(View view) {
@@ -33,9 +37,13 @@ public class UserLoggedIn extends AppCompatActivity {
         startActivity(profilepage);
     }
 
-    public void updateprofile(View view) {
-        Intent updateprofilepage = new Intent(UserLoggedIn.this,UpdateProfile.class);
-        updateprofilepage.putExtra("updateusername",username);
-        startActivity(updateprofilepage);
+    public void mostwantedpage(View view) {
+        Intent mostwanted = new Intent(UserLoggedIn.this,MostWantedList.class);
+        startActivity(mostwanted);
+    }
+
+    public void complaintstatus(View view) {
+        Intent statuscomp = new Intent(UserLoggedIn.this,UserCheckComplaintStatus.class);
+        startActivity(statuscomp);
     }
 }

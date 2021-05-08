@@ -14,7 +14,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CrimeManagement">
-        <activity android:name=".MostWantedList"></activity>
+        <activity android:name=".UserCheckComplaintStatus"></activity>
+        <activity android:name=".FileComplaint" />
+        <activity android:name=".ZoneInformation" />
+        <activity android:name=".ChooseComplaintArea" />
+        <activity android:name=".AdminManageUsers" />
+        <activity android:name=".MostWantedList" />
         <activity android:name=".AdminAddMostWanted" />
         <activity android:name=".AdminDashboard" /> <!-- <activity -->
         <!-- android:name="ar.ui.login.AdminDashbod" -->

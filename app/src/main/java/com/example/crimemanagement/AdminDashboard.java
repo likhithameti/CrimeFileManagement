@@ -23,4 +23,9 @@ public class AdminDashboard extends AppCompatActivity {
         Intent list = new Intent(AdminDashboard.this,MostWantedList.class);
         startActivity(list);
     }
+
+    public void manageusersclick(View view) {
+        Intent manage = new Intent(AdminDashboard.this,AdminManageUsers.class);
+        startActivity(manage);
+    }
 }

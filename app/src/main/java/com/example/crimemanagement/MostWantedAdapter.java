@@ -51,7 +51,6 @@ public class MostWantedAdapter extends RecyclerView.Adapter<MostWantedAdapter.Vi
         ImageView imageView;
         TextView name,crime;
         public ViewHolder(@NonNull View itemView) {
-
             super(itemView);
             imageView = itemView.findViewById(R.id.personimage);
             name = itemView.findViewById(R.id.personname);

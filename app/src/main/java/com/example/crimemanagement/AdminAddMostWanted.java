@@ -74,7 +74,7 @@ public class AdminAddMostWanted extends AppCompatActivity {
 
         super.onActivityResult(requestCode, resultCode, data);
 
-        if (requestCode == Image_Request_Code && resultCode == RESULT_OK && data != null && data.getData() != null) {
+         if (requestCode == Image_Request_Code && resultCode == RESULT_OK && data != null && data.getData() != null){
 
             FilePathUri = data.getData();
 

@@ -35,6 +35,8 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="30dp"
                 android:padding="10dp"
+                android:maxLines="1"
+                android:inputType="text"
                 android:background="@drawable/background_input"
                 android:textColor="@color/colortextPrimary"
                 android:drawableLeft="@drawable/ic_baseline_group_24"/>
@@ -44,6 +46,7 @@
                 android:id="@+id/signupfullname"
                 android:layout_height="40dp"
                 android:inputType="text"
+                android:maxLines="1"
                 android:hint="Enter Full Name"
                 android:textAlignment="center"
                 android:layout_gravity="center"
@@ -63,6 +66,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="30dp"
                 android:padding="10dp"
+                android:maxLines="1"
                 android:background="@drawable/background_input"
                 android:textColor="@color/colortextPrimary"
                 android:drawableLeft="@drawable/ic_baseline_lock_24"/>
@@ -79,6 +83,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="30dp"
                 android:padding="10dp"
+                android:maxLines="1"
                 android:background="@drawable/background_input"
                 android:textColor="@color/colortextPrimary"
                 android:drawableLeft="@drawable/ic_baseline_phone_android_24"/>
@@ -95,6 +100,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="30dp"
                 android:padding="10dp"
+                android:maxLines="1"
                 android:background="@drawable/background_input"
                 android:textColor="@color/colortextPrimary"
                 android:drawableLeft="@drawable/ic_baseline_credit_card_24"/>

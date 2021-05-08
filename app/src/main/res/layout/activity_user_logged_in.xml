@@ -76,6 +76,7 @@
             android:layout_width="match_parent"
             android:background="#99C8DCCF"
             android:layout_marginTop="20dp"
+            android:onClick="complaintstatus"
             android:layout_marginBottom="20dp"
             android:layout_height="110dp">
 
@@ -124,31 +125,6 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:background="#99719ABA"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
-            android:onClick="updateprofile"
-            android:layout_height="110dp">
-
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/ic_baseline_update_24"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Update Profile"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                android:textColor="#162014"
-                android:layout_alignParentRight="true"
-                android:padding="10dp" />
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
             android:background="#99D8ADE4"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
@@ -176,6 +152,7 @@
             android:layout_width="match_parent"
             android:background="#99CCBFC5"
             android:layout_marginTop="20dp"
+            android:onClick="mostwantedpage"
             android:layout_marginBottom="20dp"
             android:layout_height="110dp">
 

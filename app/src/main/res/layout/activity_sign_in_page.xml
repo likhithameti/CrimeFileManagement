@@ -51,6 +51,8 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="30dp"
                 android:padding="10dp"
+                android:maxLines="1"
+                android:inputType="text"
                 android:background="@drawable/background_input"
                 android:textColor="@color/colortextPrimary"
                 android:drawableLeft="@drawable/ic_baseline_group_24"/>
@@ -65,6 +67,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="30dp"
                 android:padding="10dp"
+                android:maxLines="1"
                 android:background="@drawable/background_input"
                 android:textColor="@color/colortextPrimary"
                 android:drawableLeft="@drawable/ic_baseline_lock_24"/>

@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import com.google.firebase.database.DataSnapshot;
@@ -19,11 +20,12 @@ public class ViewProfile extends AppCompatActivity {
     TextView t1,t2,t3,t4,t5;
     FirebaseDatabase database;
     DatabaseReference myrefProfile;
+    String username;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Intent profile = getIntent();
-        String username = profile.getStringExtra("profileusername");
+        username = profile.getStringExtra("profileusername");
         setContentView(R.layout.activity_view_profile);
         t1 = (TextView)findViewById(R.id.profilename);
         t2 = (TextView)findViewById(R.id.profileusername);
@@ -57,6 +59,11 @@ public class ViewProfile extends AppCompatActivity {
         });
 
 
-
     }
+    public void updateprofile(View view) {
+        Intent updateprofilepage = new Intent(ViewProfile.this,UpdateProfile.class);
+        updateprofilepage.putExtra("updateusername",username);
+        startActivity(updateprofilepage);
+    }
+
 }

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminManageUsers">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="250dp"
+                android:layout_margin="10dp"
+                android:maxLines="1"
+                android:id="@+id/usernamegetdata"
+                android:hint="Enter User Name"
+                android:inputType="text"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"
+                android:background="@drawable/background_input2"/>
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:background="@drawable/backgroundbutton"
+                android:layout_margin="10dp"
+                android:textAlignment="center"
+                android:text="Get Details"
+                android:onClick="get"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:textStyle="normal"/>
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:textSize="20dp"
+                android:id="@+id/unamedisplay"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:layout_margin="20dp"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:hint="User Name Of Person"
+                android:background="@drawable/background_input"/>
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:textStyle="normal"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:id="@+id/aadhaardisplay"
+                android:layout_margin="20dp"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:hint="Aadhaar Number Of Person"
+                android:background="@drawable/background_input"/>
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:textStyle="normal"
+                android:textSize="20dp"
+                android:layout_margin="20dp"
+                android:textColor="@color/black"
+                android:id="@+id/phonedisplay"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:hint="Phone Number Of Person"
+                android:background="@drawable/background_input"/>
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Block User"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:textColor="@color/colortextPrimary" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

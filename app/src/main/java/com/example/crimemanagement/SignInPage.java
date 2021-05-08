@@ -21,6 +21,8 @@ public class SignInPage extends AppCompatActivity {
     EditText loginpwd;
     FirebaseDatabase database;
     DatabaseReference myrefLogin;
+    // to user username everywhere once signed In
+    public static String globalusername;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,7 +46,7 @@ public class SignInPage extends AppCompatActivity {
                             Intent i1 = new Intent(SignInPage.this,UserLoggedIn.class);
                             loginpwd.setText("");
                             loginuname.setText("");
-                            i1.putExtra("profilename",username); // for profile name
+                            globalusername = username;
                             startActivity(i1);
                         }
                         else{
