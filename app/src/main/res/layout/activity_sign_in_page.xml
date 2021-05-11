@@ -17,12 +17,6 @@
             android:layout_gravity="center_vertical"
             android:orientation="vertical">
 
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/police"
-                android:layout_gravity="center_horizontal">
-            </ImageView>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
