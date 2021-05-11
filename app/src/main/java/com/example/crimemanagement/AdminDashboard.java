@@ -28,4 +28,19 @@ public class AdminDashboard extends AppCompatActivity {
         Intent manage = new Intent(AdminDashboard.this,AdminManageUsers.class);
         startActivity(manage);
     }
+
+    public void adminpendingcomplaints(View view) {
+        Intent pend = new Intent(AdminDashboard.this,ChooseComplaintAreaAdmin.class);
+        startActivity(pend);
+    }
+
+    public void adminlogout(View view) {
+        Intent l = new Intent(AdminDashboard.this,AdminLoginPage.class);
+        startActivity(l);
+    }
+
+    public void newsadd(View view) {
+        Intent news = new Intent(AdminDashboard.this,AdminAddNews.class);
+        startActivity(news);
+    }
 }

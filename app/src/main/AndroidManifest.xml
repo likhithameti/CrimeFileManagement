@@ -14,7 +14,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CrimeManagement">
-        <activity android:name=".UserCheckComplaintStatus"></activity>
+        <activity android:name=".AdminAddNews"></activity>
+        <activity android:name=".UserReadNews" />
+        <activity android:name=".AdminCheckComplaintStatus" />
+        <activity android:name=".ChooseComplaintAreaAdmin" />
+        <activity android:name=".UserCheckComplaintStatus" />
         <activity android:name=".FileComplaint" />
         <activity android:name=".ZoneInformation" />
         <activity android:name=".ChooseComplaintArea" />

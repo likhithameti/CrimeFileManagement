@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AdminDashboard">
+    tools:context=".ChooseComplaintAreaAdmin">
 
 
     <LinearLayout
@@ -13,25 +13,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="?actionBarSize">
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:padding="10dp"
-                android:layout_margin="10dp"
-                android:text="Logout"
-                android:onClick="adminlogout"
-                android:textColor="@color/white"
-                android:textStyle="bold"
-                android:background="#4A4638"
-                android:layout_alignParentRight="true" />
-
-
-        </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -43,11 +24,23 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:text="Admin Dashboard"
+                android:text="Select Zone for Checking Complaints"
                 android:textColor="@color/black"
-                android:textSize="34sp" />
+                android:textSize="20sp" />
 
         </RelativeLayout>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:text="Show Zones Information"
+            android:layout_margin="20dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:onClick="zoneinformationadmin"
+            android:background="#6B91AE"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
 
         <GridLayout
             android:id="@+id/mainGrid"
@@ -63,8 +56,8 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="100dp"
                 android:layout_height="150dp"
+                android:onClick="eastzoneclick"
                 android:layout_columnWeight="1"
-                android:onClick="addMostWanted"
                 android:layout_rowWeight="1"
                 android:layout_marginBottom="16dp"
                 android:layout_marginLeft="16dp"
@@ -80,7 +73,7 @@
                     android:layout_height="wrap_content">
 
                     <ImageView
-                        android:src="@drawable/mostwanted"
+                        android:src="@drawable/telangana_police_logo"
                         android:layout_gravity="center_horizontal"
                         android:layout_width="100dp"
                         android:layout_height="100dp" />
@@ -90,7 +83,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:lines="2"
-                        android:text="Add Most Wanted Persons"
+                        android:text="East Zone"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="12sp"
@@ -105,7 +98,7 @@
                 android:layout_width="94dp"
                 android:layout_height="100dp"
                 android:layout_rowWeight="1"
-                android:onClick="adminpendingcomplaints"
+                android:onClick="westzoneclick"
                 android:layout_columnWeight="1"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
@@ -124,16 +117,16 @@
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/ic_baseline_pending_actions_24" />
+                        android:src="@drawable/telangana_police_logo" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:gravity="center_horizontal"
-                        android:text="Pending Complaints"
+                        android:layout_gravity="center_horizontal"
+                        android:text="West Zone"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
-                        android:textSize="13sp"
+                        android:textSize="12sp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -145,7 +138,7 @@
                 android:layout_height="150dp"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-                android:onClick="newsadd"
+                android:onClick="southzoneclick"
                 android:layout_marginBottom="16dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
@@ -161,13 +154,13 @@
                     android:layout_height="wrap_content">
 
                     <ImageView
-                        android:src="@drawable/news"
+                        android:src="@drawable/telangana_police_logo"
                         android:layout_gravity="center_horizontal"
                         android:layout_width="100dp"
                         android:layout_height="100dp" />
 
                     <TextView
-                        android:text="Add News"
+                        android:text="South Zone"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="12sp"
@@ -187,9 +180,9 @@
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_marginLeft="16dp"
+                android:onClick="centralzoneclick"
                 android:layout_marginRight="16dp"
                 android:layout_marginBottom="16dp"
-                android:onClick="manageusersclick"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="8dp">
 
@@ -204,13 +197,13 @@
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/username_logo" />
+                        android:src="@drawable/telangana_police_logo" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:text="Manage Users"
+                        android:text="Central Zone"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="12sp"
@@ -219,7 +212,6 @@
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
-
             <androidx.cardview.widget.CardView
                 android:layout_width="100dp"
                 android:layout_height="150dp"
@@ -227,9 +219,9 @@
                 android:layout_rowWeight="1"
                 android:layout_marginBottom="16dp"
                 android:layout_marginLeft="16dp"
+                android:onClick="northzoneclick"
                 android:layout_marginRight="16dp"
                 app:cardElevation="8dp"
-                android:onClick="adminviewmostwanted"
                 app:cardCornerRadius="8dp"
                 >
 
@@ -241,13 +233,13 @@
                     android:layout_height="wrap_content">
 
                     <ImageView
-                        android:src="@drawable/viewmost"
+                        android:src="@drawable/telangana_police_logo"
                         android:layout_gravity="center_horizontal"
                         android:layout_width="100dp"
                         android:layout_height="100dp" />
 
                     <TextView
-                        android:text="View Most Wanted"
+                        android:text="North Zone"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="12sp"
@@ -259,6 +251,7 @@
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
+
         </GridLayout>
 
     </LinearLayout>

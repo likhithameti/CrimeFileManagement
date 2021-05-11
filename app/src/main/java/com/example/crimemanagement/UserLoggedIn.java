@@ -46,4 +46,9 @@ public class UserLoggedIn extends AppCompatActivity {
         Intent statuscomp = new Intent(UserLoggedIn.this,UserCheckComplaintStatus.class);
         startActivity(statuscomp);
     }
+
+    public void checklatestnews(View view) {
+        Intent checklatnews = new Intent(UserLoggedIn.this,UserReadNews.class);
+        startActivity(checklatnews);
+    }
 }

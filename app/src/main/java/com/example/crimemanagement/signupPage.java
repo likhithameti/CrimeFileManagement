@@ -159,51 +159,8 @@ public class signupPage extends AppCompatActivity {
 
     }
 
-//    private void sendsms(String phone) {
-////        if(checkPermission(Manifest.permission.SEND_SMS)){
-////            SmsManager smsManager = SmsManager.getDefault();
-////            System.out.println("This method called"+phoneNumber);
-////            smsManager.sendTextMessage("+919247463219",null,"Likhith Sent",null,null);
-////            Toast.makeText(this, "SMS SENT TO MOBILE"+phoneNumber, Toast.LENGTH_LONG).show();
-////        }
-////        else{
-////            Toast.makeText(this, "Permission Denied", Toast.LENGTH_LONG).show();
-////        }
-//        try {
-//            // Construct data
-//            String apiKey = "apikey=" + "MWZkOGE3OTBiMDI5MGQzZTgwYTA4Y2Q0MjFiMmM5MjE";
-//            String message = "&message=" + "This is your message";
-//            String sender = "&sender=" + "TXTLCL";
-//            String numbers = "&numbers=" + "919515956730";
-//            System.out.println("SMS Sent using text local");
-//
-//            // Send data
-//            HttpURLConnection conn = (HttpURLConnection) new URL("https://api.textlocal.in/send/?").openConnection();
-//            String data = apiKey + numbers + message;
-//            conn.setDoOutput(true);
-//            conn.setRequestMethod("POST");
-//            conn.setRequestProperty("Content-Length", Integer.toString(data.length()));
-//            conn.getOutputStream().write(data.getBytes("UTF-8"));
-//            final BufferedReader rd = new BufferedReader(new InputStreamReader(conn.getInputStream()));
-//            final StringBuffer stringBuffer = new StringBuffer();
-//            String line;
-//            while ((line = rd.readLine()) != null) {
-//                stringBuffer.append(line);
-//            }
-//            System.out.println(stringBuffer.toString());
-//            rd.close();
-//        } catch (Exception e) {
-//            System.out.println("Error SMS "+e);
-//        }
-//    }
-
     public void login(View view) {
         Intent signupi1 = new Intent(signupPage.this,SignInPage.class);
         startActivity(signupi1);
     }
-
-//    public boolean checkPermission(String permission){
-//        int check = ContextCompat.checkSelfPermission(this,permission);
-//        return (check== PackageManager.PERMISSION_GRANTED);
-//    }
 }

@@ -5,7 +5,7 @@ public class ComplaintClass {
     public String crimeloc;
     public String crimetype;
     public String crimedescription;
-    public String username;
+    public String usernaam;
     public String aadhaar;
     public String status;
 
@@ -14,7 +14,7 @@ public class ComplaintClass {
         this.crimeloc = crimeloc;
         this.crimetype = crimetype;
         this.crimedescription = crimedescription;
-        this.username = username;
+        this.usernaam = username;
         this.aadhaar = aadhaar;
         this.status = status;
     }
@@ -59,12 +59,12 @@ public class ComplaintClass {
         this.crimedescription = crimedescription;
     }
 
-    public String getUsername() {
-        return username;
+    public String getUsernaam() {
+        return usernaam;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setUsernaam(String username) {
+        this.usernaam = username;
     }
 
     public String getAadhaar() {

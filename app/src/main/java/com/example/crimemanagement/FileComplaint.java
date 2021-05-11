@@ -175,7 +175,6 @@ public class FileComplaint extends AppCompatActivity {
                                 public void onComplete(@NonNull Task<Uri> task) {
                                     String t = task.getResult().toString();
                                     progressDialog.dismiss();
-                                    Toast.makeText(getApplicationContext(), "Image Uploaded Successfully ", Toast.LENGTH_LONG).show();
                                     DatabaseReference newPost = mRefComplaint.push();
                                     String crimeloc = crimearea.getText().toString().trim();
                                     String desc = appCompatEditText.getText().toString();
@@ -183,6 +182,8 @@ public class FileComplaint extends AppCompatActivity {
                                     ComplaintClass imageUploadInfo = new ComplaintClass(task.getResult().toString(),crimeloc,type,desc,usernameuser,aadhaaruser,"pending");
                                     String ImageUploadId = mRefComplaint.push().getKey();
                                     mRefComplaint.child(ImageUploadId).setValue(imageUploadInfo);
+                                    mRefComplaint.child(ImageUploadId).child("date").setValue(new Date().toString());
+                                    mRefComplaint.child(ImageUploadId).child("id").setValue(ImageUploadId);
 
                                     // adding data to the user : compliant section to show the status complaint
                                     mRefUserDetails.addListenerForSingleValueEvent(new ValueEventListener() {
@@ -203,6 +204,7 @@ public class FileComplaint extends AppCompatActivity {
                                     });
                                     crimearea.setText("");
                                     appCompatEditText.setText("");
+                                    Toast.makeText(getApplicationContext(), "Complaint Filed Successfully ", Toast.LENGTH_LONG).show();
                                 }
                             });
 //                            @SuppressWarnings("VisibleForTests")
