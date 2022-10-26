@@ -16,6 +16,18 @@
             android:layout_marginTop="20dp"
             android:layout_height="wrap_content">
 
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:background="@drawable/backgroundbutton"
+                android:layout_margin="10dp"
+                android:textAlignment="center"
+                android:text="View All Users"
+                android:onClick="getAllUsers"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:textStyle="normal"/>
+
             <EditText
                 android:layout_width="250dp"
                 android:layout_margin="10dp"

@@ -3,6 +3,7 @@ package com.example.crimemanagement;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -69,5 +70,10 @@ public class AdminManageUsers extends AppCompatActivity {
             Toast.makeText(this, "Enter Username", Toast.LENGTH_LONG).show();
         }
 
+    }
+
+    public void getAllUsers(View view) {
+        Intent allUsersIntent = new Intent(AdminManageUsers.this,ViewAllUsers.class);
+        startActivity(allUsersIntent);
     }
 }
